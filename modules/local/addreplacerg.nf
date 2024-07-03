@@ -11,7 +11,7 @@ process ADDREPLACERG {
 
     script:
     """
-    samtools addreplacerg -r SM:${sample_id} -o output.bam ${bam_file}
+    samtools addreplacerg -r ID:1 -r SM:${sample_id} -o output.bam ${bam_file}
     samtools index output.bam
     """
 }
