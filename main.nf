@@ -2,10 +2,10 @@
 
 nextflow.enable.dsl=2
 
-include { ADDREPLACERG } from './modules/local/addreplacerg.nf'
+include { REHEADER } from './modules/local/reheader.nf'
 
 bam = Channel.fromPath( params.bam ).first()
 
 workflow {
-    ADDREPLACERG(bam,params.sample_id)
+    REHEADER(bam,params.sample_id)
 }
