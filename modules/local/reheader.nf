@@ -2,7 +2,7 @@ process REHEADER {
     container 'quay.io/biocontainers/samtools:1.19.2--h50ea8bc_0'
 
     cpus 32
-    memory '70 GB'
+    memory '60 GB'
 
     input:
     path bam_file
